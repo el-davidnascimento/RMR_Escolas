@@ -3,7 +3,8 @@ import pandas as pd
 
 pastas = [
     r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.2. MVM\13.2.2.2.2. Quantitativo\13.2.2.2.2.1. Base\13.2.2.2.2.1.2. Base Escolas\13.2.2.2.2.1.2.1. Excel',
-    r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.1. UNI\13.2.2.1.2. Quantitativo\13.2.2.1.2.1. Base\13.2.2.1.2.1.2. Base Escolas\13.2.2.1.2.1.2.3. Excel'
+    r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.1. UNI\13.2.2.1.2. Quantitativo\13.2.2.1.2.1. Base\13.2.2.1.2.1.2. Base Escolas\13.2.2.1.2.1.2.3. Excel',
+    r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.2. MVM\13.2.2.2.2. Quantitativo\13.2.2.2.2.1. Base\13.2.2.2.2.1.2. Base Escolas\13.2.2.2.2.1.2.1. Excel'
 ]
 dados_concatenados = pd.DataFrame()
 # Loop para percorrer os arquivos na pasta
