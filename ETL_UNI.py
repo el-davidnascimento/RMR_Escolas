@@ -55,6 +55,7 @@ Valor_meta_retencao = Aba_metricas['F6'].value
 Valor_ruim_retencao = Aba_metricas['G6'].value
 Valor_regular_retencao = Aba_metricas['H6'].value
 Valor_otimo_retencao = Aba_metricas['I6'].value
+Valor_peso_retencao = Aba_metricas['J6'].value
 
 
 # Criar os dados para a tabela
@@ -73,6 +74,7 @@ dados = {
     'ÓTIMO': Valor_otimo_retencao,
     'Valor': [0] * len(meses),
     'Tipo':["Porcentagem"] * len(meses),
+    'Peso' : Valor_peso_retencao,
 }
 
 # Criar o DataFrame
@@ -139,6 +141,7 @@ Valor_meta_falta_colaborador = Aba_metricas['F8'].value
 Valor_ruim_falta_colaborador = Aba_metricas['G8'].value
 Valor_regular_falta_colaborador = Aba_metricas['H8'].value
 Valor_otimo_falta_colaborador = Aba_metricas['I8'].value
+Valor_peso_falta_colaborador = Aba_metricas['J8'].value
 
 # Criar os dados para a tabela
 dados = {
@@ -156,6 +159,7 @@ dados = {
     'ÓTIMO': Valor_otimo_falta_colaborador,
     'Valor': [0] * len(meses),
     'Tipo':["Porcentagem"] * len(meses),
+    'Peso' : Valor_peso_falta_colaborador,
 }
 
 # Criar o DataFrame
@@ -209,6 +213,7 @@ Valor_meta_atraso_colaborador = Aba_metricas['F7'].value
 Valor_ruim_atraso_colaborador = Aba_metricas['G7'].value
 Valor_regular_atraso_colaborador = Aba_metricas['H7'].value
 Valor_otimo_atraso_colaborador = Aba_metricas['I7'].value
+Valor_peso_atraso_colaborador = Aba_metricas['J7'].value
 
 # Criar os dados para a tabela
 dados = {
@@ -226,6 +231,7 @@ dados = {
     'ÓTIMO': Valor_otimo_atraso_colaborador,
     'Valor': [0] * len(meses),
     'Tipo':["Porcentagem"] * len(meses),
+    'Peso' : Valor_peso_atraso_colaborador,
 }
 
 # Criar o DataFrame
@@ -304,6 +310,7 @@ Valor_meta_desistencia_regular = Aba_metricas['F4'].value
 Valor_ruim_desistencia_regular = Aba_metricas['G4'].value
 Valor_regular_desistencia_regular = Aba_metricas['H4'].value
 Valor_otimo_desistencia_regular = Aba_metricas['I4'].value
+Valor_peso_desistencia_regular = Aba_metricas['J4'].value
 
 
 # Criar os dados para a tabela
@@ -322,6 +329,7 @@ dados = {
     'ÓTIMO': Valor_otimo_desistencia_regular,
     'Valor': [0] * len(meses),
     'Tipo':["Porcentagem"] * len(meses),
+    'Peso' : Valor_peso_desistencia_regular,
 }
 
 # Criar o DataFrame
@@ -383,6 +391,7 @@ Valor_meta_desistencia_integral = Aba_metricas['F5'].value
 Valor_ruim_desistencia_integral = Aba_metricas['G5'].value
 Valor_regular_desistencia_integral = Aba_metricas['H5'].value
 Valor_otimo_desistencia_integral = Aba_metricas['I5'].value
+Valor_peso_desistencia_integral = Aba_metricas['J5'].value
 
 
 # Criar os dados para a tabela
@@ -401,6 +410,7 @@ dados = {
     'ÓTIMO': Valor_otimo_desistencia_integral,
     'Valor': [0] * len(meses),
     'Tipo':["Porcentagem"] * len(meses),
+    'Peso' : Valor_peso_desistencia_integral,
 }
 
 # Criar o DataFrame
@@ -473,6 +483,7 @@ Valor_meta_contratos = Aba_metricas['F3'].value
 Valor_ruim_contratos = Aba_metricas['G3'].value
 Valor_regular_contratos = Aba_metricas['H3'].value
 Valor_otimo_contratos = Aba_metricas['I3'].value
+Valor_peso_contratos = Aba_metricas['J3'].value
 
 # Criar os dados para a tabela
 dados_contrato = {
@@ -490,6 +501,7 @@ dados_contrato = {
     'ÓTIMO': Valor_otimo_contratos,
     'Valor': [0] * len(meses),
     'Tipo':["Porcentagem"] * len(meses),
+    'Peso' : Valor_peso_contratos,
 }
 
 
@@ -601,6 +613,7 @@ Valor_meta_turnover = Aba_metricas['F9'].value
 Valor_ruim_turnover = Aba_metricas['G9'].value
 Valor_regular_turnover = Aba_metricas['H9'].value
 Valor_otimo_turnover = Aba_metricas['I9'].value
+Valor_peso_turnover = Aba_metricas['J9'].value
 
 # Criar o DataFrame de colaboradores
 df_colaboradores = pd.DataFrame({
@@ -618,6 +631,7 @@ df_colaboradores = pd.DataFrame({
     'ÓTIMO': Valor_otimo_turnover,
     'Valor': [(qtde_admitidos_mes[i] + qtde_demitidos_mes[i]) / (2 * qtde_total_colaboradores[i]) if qtde_total_colaboradores[i] is not None and qtde_total_colaboradores[i] != 0 else None for i in range(len(meses))],
     'Tipo':["Porcentagem"] * len(meses),
+    'Peso' : Valor_peso_turnover,
 })
 
 df_colaboradores['Valor'] = df_colaboradores['Valor'].apply(lambda x: '{:.2%}'.format(x) if x is not None else None)
@@ -646,6 +660,7 @@ Valor_meta_pedido_desligamento = Aba_metricas['F10'].value
 Valor_ruim_pedido_desligamento = Aba_metricas['G10'].value
 Valor_regular_pedido_desligamento = Aba_metricas['H10'].value
 Valor_otimo_pedido_desligamento = Aba_metricas['I10'].value
+Valor_peso_pedido_desligamento = Aba_metricas['J10'].value
 
 
 # Criar o DataFrame de colaboradores
@@ -664,6 +679,7 @@ df_colaboradores = pd.DataFrame({
     'ÓTIMO': Valor_otimo_pedido_desligamento,
     'Valor': [(qtde_demitidos_pedido[i]) / ( qtde_total_colaboradores[i]) if qtde_total_colaboradores[i] is not None and qtde_total_colaboradores[i] != 0 else None for i in range(len(meses))],
     'Tipo':["Porcentagem"] * len(meses),
+    'Peso' : Valor_peso_pedido_desligamento,
 })
 
 df_colaboradores['Valor'] = df_colaboradores['Valor'].apply(lambda x: '{:.2%}'.format(x) if x is not None else None)
@@ -703,6 +719,7 @@ Valor_meta_notas_ph = Aba_metricas['F11'].value
 Valor_ruim_notas_ph = Aba_metricas['G11'].value
 Valor_regular_notas_ph = Aba_metricas['H11'].value
 Valor_otimo_notas_ph = Aba_metricas['I11'].value
+Valor_peso_notas_ph = Aba_metricas['J11'].value
 
 
 # Criar o DataFrame de colaboradores
@@ -721,6 +738,7 @@ df_ph = pd.DataFrame({
     'ÓTIMO': Valor_otimo_notas_ph,
     'Valor': [0] * len(meses),
     'Tipo':["Porcentagem"] * len(meses),
+    'Peso' : Valor_peso_notas_ph,
 })
 
 # Inicializar as listas
@@ -770,6 +788,7 @@ Valor_meta_engajamento_ph = Aba_metricas['F12'].value
 Valor_ruim_engajamento_ph = Aba_metricas['G12'].value
 Valor_regular_engajamento_ph = Aba_metricas['H12'].value
 Valor_otimo_engajamento_ph = Aba_metricas['I12'].value
+Valor_peso_engajamento_ph = Aba_metricas['J12'].value
 
 
 # Criar o DataFrame de colaboradores
@@ -788,6 +807,7 @@ df_avaliacoes = pd.DataFrame({
     'ÓTIMO': Valor_otimo_engajamento_ph,
     'Valor': [0] * len(meses),
     'Tipo':["Porcentagem"] * len(meses),
+    'Peso' : Valor_peso_engajamento_ph,
 })
 
 # Criar a lista de meses de 1 a 12
@@ -853,6 +873,7 @@ Valor_meta_falta_aluno = Aba_metricas['F13'].value
 Valor_ruim_falta_aluno = Aba_metricas['G13'].value
 Valor_regular_falta_aluno = Aba_metricas['H13'].value
 Valor_otimo_falta_aluno = Aba_metricas['I13'].value
+Valor_peso_falta_aluno = Aba_metricas['J13'].value
 
 # Criar os dados para a tabela
 dados = {
@@ -870,6 +891,7 @@ dados = {
     'ÓTIMO': Valor_otimo_falta_aluno,
     'Valor': [None] * len(meses),
     'Tipo':["Porcentagem"] * len(meses),
+    'Peso': Valor_peso_falta_aluno,
 }
 
 # Criar o DataFrame
@@ -932,6 +954,7 @@ Valor_meta_ensalamento = Aba_metricas['F14'].value
 Valor_ruim_ensalamento = Aba_metricas['G14'].value
 Valor_regular_ensalamento = Aba_metricas['H14'].value
 Valor_otimo_ensalamento = Aba_metricas['I14'].value
+Valor_peso_ensalamento = Aba_metricas['J14'].value
 
 # Criar os dados para a tabela
 dados = {
@@ -949,6 +972,7 @@ dados = {
     'ÓTIMO': Valor_otimo_ensalamento,
     'Valor': [0] * len(meses),
     'Tipo':["Porcentagem"] * len(meses),
+    'Peso': Valor_peso_ensalamento,
 }
 
 # Criar o DataFrame
@@ -1019,6 +1043,7 @@ Valor_meta_governanca = Aba_metricas['F15'].value
 Valor_ruim_governanca = Aba_metricas['G15'].value
 Valor_regular_governanca = Aba_metricas['H15'].value
 Valor_otimo_governanca = Aba_metricas['I15'].value
+Valor_peso_governanca = Aba_metricas['J15'].value
 
 # Criar os dados para a tabela
 dados = {
@@ -1036,6 +1061,7 @@ dados = {
     'ÓTIMO': Valor_otimo_governanca,
     'Valor': [0] * len(meses),
     'Tipo':["Porcentagem"] * len(meses),
+    'Peso' : Valor_peso_governanca,
 }
 
 # Criar o DataFrame
@@ -1090,6 +1116,7 @@ Valor_meta_aderencia_totvs = Aba_metricas['F16'].value
 Valor_ruim_aderencia_totvs = Aba_metricas['G16'].value
 Valor_regular_aderencia_totvs = Aba_metricas['H16'].value
 Valor_otimo_aderencia_totvs = Aba_metricas['I16'].value
+Valor_peso_aderencia_totvs = Aba_metricas['J16'].value
 
 # Criar os dados para a tabela
 dados = {
@@ -1107,6 +1134,7 @@ dados = {
     'ÓTIMO': Valor_otimo_aderencia_totvs,
     'Valor': [0] * len(meses),
     'Tipo':["Porcentagem"] * len(meses),
+    'Peso': Valor_peso_aderencia_totvs,
 }
 
 # Criar o DataFrame
@@ -1172,6 +1200,7 @@ Valor_meta_financeiro_inadimplencia = Aba_metricas['F8'].value
 Valor_ruim_financeiro_inadimplencia = Aba_metricas['G8'].value
 Valor_regular_financeiro_inadimplencia = Aba_metricas['H8'].value
 Valor_otimo_financeiro_inadimplencia = Aba_metricas['I8'].value
+Valor_peso_inadimplencia = Aba_metricas['J8'].value
 
 # Criar os dados para a tabela
 dados = {
@@ -1189,6 +1218,7 @@ dados = {
     'ÓTIMO': Valor_otimo_financeiro_inadimplencia,
     'Valor': [0] * len(meses),
     'Tipo':["Porcentagem"] * len(meses),
+    'Peso' : Valor_peso_inadimplencia,
 }
 
 # Criar o DataFrame
@@ -1254,6 +1284,7 @@ Valor_meta_financeiro_custo_aluno = Aba_metricas['F6'].value
 Valor_ruim_financeiro_custo_aluno = Aba_metricas['G6'].value
 Valor_regular_financeiro_custo_aluno = Aba_metricas['H6'].value
 Valor_otimo_financeiro_custo_aluno = Aba_metricas['I6'].value
+Valor_peso_custo_aluno = Aba_metricas['J6'].value
 
 # Criar os dados para a tabela
 dados = {
@@ -1271,6 +1302,7 @@ dados = {
     'ÓTIMO': Valor_otimo_financeiro_custo_aluno,
     'Valor': [0] * len(meses),
     'Tipo':["Porcentagem"] * len(meses),
+    'Peso': Valor_peso_custo_aluno,
 }
 
 # Criar o DataFrame
@@ -1338,6 +1370,7 @@ Valor_meta_financeiro_orcamento = Aba_metricas['F9'].value
 Valor_ruim_financeiro_orcamento = Aba_metricas['G9'].value
 Valor_regular_financeiro_orcamento = Aba_metricas['H9'].value
 Valor_otimo_financeiro_orcamento = Aba_metricas['I9'].value
+Valor_peso_orcamento = Aba_metricas['J9'].value
 
 # Criar os dados para a tabela
 dados = {
@@ -1355,6 +1388,7 @@ dados = {
     'ÓTIMO': Valor_otimo_financeiro_orcamento,
     'Valor': [0] * len(meses),
     'Tipo':["Porcentagem"] * len(meses),
+    'Peso' : Valor_peso_orcamento,
 }
 
 # Criar o DataFrame
@@ -1408,6 +1442,7 @@ Valor_meta_folha_pedagogico = Aba_metricas['F3'].value
 Valor_ruim_folha_pedagogico = Aba_metricas['G3'].value
 Valor_regular_folha_pedagogico = Aba_metricas['H3'].value
 Valor_otimo_folha_pedagogico = Aba_metricas['I3'].value
+Valor_peso_folha_pedagogico = Aba_metricas['J3'].value
 
 # Criar os dados para a tabela
 dados = {
@@ -1425,6 +1460,7 @@ dados = {
     'ÓTIMO': Valor_otimo_folha_pedagogico,
     'Valor': [0] * len(meses),
     'Tipo':["Porcentagem"] * len(meses),
+    'Peso' : Valor_peso_folha_pedagogico,
 }
 
 # Criar o DataFrame
@@ -1487,6 +1523,7 @@ Valor_meta_folha_administrativo = Aba_metricas['F4'].value
 Valor_ruim_folha_administrativo = Aba_metricas['G4'].value
 Valor_regular_folha_administrativo= Aba_metricas['H4'].value
 Valor_otimo_folha_administrativo = Aba_metricas['I4'].value
+Valor_peso_folha_administrativo = Aba_metricas['J4'].value
 
 
 # Criar os dados para a tabela
@@ -1505,6 +1542,7 @@ dados = {
     'ÓTIMO': Valor_otimo_folha_administrativo,
     'Valor': [0] * len(meses),
     'Tipo':["Porcentagem"] * len(meses),
+    'Peso' : Valor_peso_folha_administrativo,
 }
 
 # Criar o DataFrame
@@ -1567,6 +1605,7 @@ Valor_meta_despesa_administrativo = Aba_metricas['F5'].value
 Valor_ruim_despesa_administrativo = Aba_metricas['G5'].value
 Valor_regular_despesa_administrativo= Aba_metricas['H5'].value
 Valor_otimo_despesa_administrativo = Aba_metricas['I5'].value
+Valor_peso_despesa_administrativo = Aba_metricas['J5'].value
 
 
 # Criar os dados para a tabela
@@ -1585,6 +1624,7 @@ dados = {
     'ÓTIMO': Valor_otimo_despesa_administrativo,
     'Valor': [0] * len(meses),
     'Tipo':["Porcentagem"] * len(meses),
+    'Peso': Valor_peso_despesa_administrativo,
 }
 
 # Criar o DataFrame
@@ -1649,6 +1689,7 @@ Valor_meta_despesa_outras = Aba_metricas['F7'].value
 Valor_ruim_despesa_outras = Aba_metricas['G7'].value
 Valor_regular_despesa_outras = Aba_metricas['H7'].value
 Valor_otimo_despesa_outras = Aba_metricas['I7'].value
+Valor_peso_despesa_outras = Aba_metricas['J7'].value
 
 
 # Criar os dados para a tabela
@@ -1667,6 +1708,7 @@ dados = {
     'ÓTIMO': Valor_otimo_despesa_outras,
     'Valor': [0] * len(meses),
     'Tipo':["Porcentagem"] * len(meses),
+    'Peso': Valor_peso_despesa_outras,
 }
 
 # Criar o DataFrame
@@ -1729,6 +1771,7 @@ Valor_meta_infraestrutura = Aba_metricas['F17'].value
 Valor_ruim_infraestrutura = Aba_metricas['G17'].value
 Valor_regular_infraestrutura = Aba_metricas['H17'].value
 Valor_otimo_infraestrutura = Aba_metricas['I17'].value
+Valor_peso_infraestrutura = Aba_metricas['J17'].value
 
 # Criar os dados para a tabela
 dados = {
@@ -1746,6 +1789,7 @@ dados = {
     'ÓTIMO': Valor_otimo_infraestrutura,
     'Valor': [0] * len(meses),
     'Tipo':["a definir"] * len(meses),
+    'Peso': Valor_peso_infraestrutura,
 }
 
 # Criar o DataFrame
@@ -1783,6 +1827,7 @@ Valor_meta_nps_colaboradores = Aba_metricas['F18'].value
 Valor_ruim_nps_colaboradores = Aba_metricas['G18'].value
 Valor_regular_nps_colaboradores = Aba_metricas['H18'].value
 Valor_otimo_nps_colaboradores = Aba_metricas['I18'].value
+Valor_peso_nps_colaboradores = Aba_metricas['J18'].value
 
 # Criar os dados para a tabela
 dados = {
@@ -1799,7 +1844,8 @@ dados = {
     'REGULAR': Valor_regular_nps_colaboradores,
     'ÓTIMO': Valor_otimo_nps_colaboradores,
     'Valor': [0] * len(meses),
-    'Tipo':["Porcentagem"] * len(meses),
+    'Tipo':["Inteiro"] * len(meses),
+    'Peso': Valor_peso_nps_colaboradores,
 }
 
 # Criar o DataFrame
@@ -1852,6 +1898,7 @@ Valor_meta_nps_pais_e_responsaveis = Aba_metricas['F19'].value
 Valor_ruim_nps_pais_e_responsaveis = Aba_metricas['G19'].value
 Valor_regular_nps_pais_e_responsaveis = Aba_metricas['H19'].value
 Valor_otimo_nps_pais_e_responsaveis = Aba_metricas['I19'].value
+Valor_peso_nps_pais_e_responsaveis = Aba_metricas['J19'].value
 
 # Criar os dados para a tabela
 dados = {
@@ -1868,7 +1915,8 @@ dados = {
     'REGULAR': Valor_regular_nps_pais_e_responsaveis,
     'ÓTIMO': Valor_otimo_nps_pais_e_responsaveis,
     'Valor': [0] * len(meses),
-    'Tipo':["Porcentagem"] * len(meses),
+    'Tipo':["Inteiro"] * len(meses),
+    'Peso': Valor_peso_nps_pais_e_responsaveis,
 }
 
 # Criar o DataFrame
@@ -1920,6 +1968,7 @@ Valor_meta_ebtida = Aba_metricas['F10'].value
 Valor_ruim_ebtida = Aba_metricas['G10'].value
 Valor_regular_ebtida = Aba_metricas['H10'].value
 Valor_otimo_ebtida = Aba_metricas['I10'].value
+Valor_peso_ebtida = Aba_metricas['J10'].value
 
 
 # Criar os dados para a tabela
@@ -1938,6 +1987,7 @@ dados = {
     'ÓTIMO': Valor_otimo_ebtida,
     'Valor': [0] * len(meses),
     'Tipo':["Porcentagem"] * len(meses),
+    'Peso': Valor_peso_ebtida,
 }
 
 # Criar o DataFrame
