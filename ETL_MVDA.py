@@ -40,7 +40,7 @@ meses = list(range(1, 13))
 ano_atual = datetime.now().year
 
 # Carregar o arquivo de métrica
-planilha = openpyxl.load_workbook(r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.2. MVM\13.2.2.2.3. Métricas\1. Novos Indicadores Escola.xlsx')
+planilha = openpyxl.load_workbook(r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.3. MVDA\13.2.2.3.3. Métricas\1. Novos Indicadores Escola.xlsx')
 
 # Selecionar a planilha desejada
 Aba_metricas = planilha['Planilha1']
@@ -61,7 +61,7 @@ Valor_otimo_retencao = Aba_metricas['I6'].value
 dados = {
     'Ano': [ano_atual] * len(meses),
     'Mês': meses,
-    'Unidade': ["MVME"] * len(meses),
+    'Unidade': ["MVDA"] * len(meses),
     'FRENTE 1': Valor_frente1_retencao,
     'ÁREA RESPONSÁVEL RESULTADO': Valor_area_responsavel_retencao,
     'SETOR RESPONSÁVEL COLETA DADO': Valor_setor_responsavel_retencao,
@@ -124,7 +124,7 @@ meses = list(range(1, 13))
 ano_atual = datetime.now().year
 
 # Carregar o arquivo de métrica
-planilha = openpyxl.load_workbook(r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.2. MVM\13.2.2.2.3. Métricas\1. Novos Indicadores Escola.xlsx')
+planilha = openpyxl.load_workbook(r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.3. MVDA\13.2.2.3.3. Métricas\1. Novos Indicadores Escola.xlsx')
 
 # Selecionar a planilha desejada
 Aba_metricas = planilha['Planilha1']
@@ -144,7 +144,7 @@ Valor_otimo_falta_colaborador = Aba_metricas['I8'].value
 dados = {
     'Ano': [ano_atual] * len(meses),
     'Mês': meses,
-    'Unidade': ["MVME"] * len(meses),
+    'Unidade': ["MVDA"] * len(meses),
     'FRENTE 1': Valor_frente1_falta_colaborador,
     'ÁREA RESPONSÁVEL RESULTADO': Valor_area_responsavel_falta_colaborador,
     'SETOR RESPONSÁVEL COLETA DADO': Valor_setor_responsavel_falta_colaborador,
@@ -194,7 +194,7 @@ meses = list(range(1, 13))
 ano_atual = datetime.now().year
 
 # Carregar o arquivo de métrica
-planilha = openpyxl.load_workbook(r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.2. MVM\13.2.2.2.3. Métricas\1. Novos Indicadores Escola.xlsx')
+planilha = openpyxl.load_workbook(r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.3. MVDA\13.2.2.3.3. Métricas\1. Novos Indicadores Escola.xlsx')
 
 # Selecionar a planilha desejada
 Aba_metricas = planilha['Planilha1']
@@ -214,7 +214,7 @@ Valor_otimo_atraso_colaborador = Aba_metricas['I7'].value
 dados = {
     'Ano': [ano_atual] * len(meses),
     'Mês': meses,
-    'Unidade': ["MVME"] * len(meses),
+    'Unidade': ["MVDA"] * len(meses),
     'FRENTE 1': Valor_frente1_atraso_colaborador,
     'ÁREA RESPONSÁVEL RESULTADO': Valor_area_responsavel_atraso_colaborador,
     'SETOR RESPONSÁVEL COLETA DADO': Valor_setor_responsavel_atraso_colaborador,
@@ -289,7 +289,7 @@ meses = list(range(1, 13))
 ano_atual = datetime.now().year
 
 # Carregar o arquivo de métrica
-planilha = openpyxl.load_workbook(r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.2. MVM\13.2.2.2.3. Métricas\1. Novos Indicadores Escola.xlsx')
+planilha = openpyxl.load_workbook(r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.3. MVDA\13.2.2.3.3. Métricas\1. Novos Indicadores Escola.xlsx')
 
 # Selecionar a planilha desejada
 Aba_metricas = planilha['Planilha1']
@@ -310,7 +310,7 @@ Valor_otimo_desistencia_regular = Aba_metricas['I4'].value
 dados = {
     'Ano': [ano_atual] * len(meses),
     'Mês': meses,
-    'Unidade': ["MVME"] * len(meses),
+    'Unidade': ["MVDA"] * len(meses),
     'FRENTE 1': Valor_frente1_desistencia_regular,
     'ÁREA RESPONSÁVEL RESULTADO': Valor_area_responsavel_desistencia_regular,
     'SETOR RESPONSÁVEL COLETA DADO': Valor_setor_responsavel_desistencia_regular,
@@ -371,7 +371,7 @@ meses = list(range(1, 13))
 ano_atual = datetime.now().year
 
 # Carregar o arquivo de métrica
-planilha = openpyxl.load_workbook(r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.2. MVM\13.2.2.2.3. Métricas\1. Novos Indicadores Escola.xlsx')
+planilha = openpyxl.load_workbook(r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.3. MVDA\13.2.2.3.3. Métricas\1. Novos Indicadores Escola.xlsx')
 
 # Selecionar a planilha desejada
 Aba_metricas = planilha['Planilha1']
@@ -392,7 +392,7 @@ Valor_otimo_desistencia_integral = Aba_metricas['I5'].value
 dados = {
     'Ano': [ano_atual] * len(meses),
     'Mês': meses,
-    'Unidade': ["MVME"] * len(meses),
+    'Unidade': ["MVDA"] * len(meses),
     'FRENTE 1': Valor_frente1_desistencia_integral,
     'ÁREA RESPONSÁVEL RESULTADO': Valor_area_responsavel_desistencia_integral,
     'SETOR RESPONSÁVEL COLETA DADO': Valor_setor_responsavel_desistencia_integral,
@@ -439,7 +439,7 @@ for mes in meses:
 
 df['Valor'] = Desistencia_Integral
 
-Tratamento_Desistencia_Integral = r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.2. MVM\13.2.2.2.2. Quantitativo\13.2.2.2.2.1. Base\13.2.2.2.2.1.2. Base Escolas\13.2.2.2.2.1.2.1. Excel\Tratamento_Desistencia_Integral.xlsx'
+Tratamento_Desistencia_Integral = r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.3. MVDA\13.2.2.3.2. Quantitativo\13.2.2.3.2.1. Base\13.2.2.3.2.1.1. Base Escolas\13.2.2.3.2.1.1.3. Excel\Tratamento_Desistencia_Integral.xlsx'
 df.to_excel(Tratamento_Desistencia_Integral,index=False)
 
 ############################################# 5 - Contratos ##########################################################
@@ -454,14 +454,14 @@ data_atual = date.datetime.today()
 
 # Criar uma nova coluna com a data atual
 dados_excel['Date_insert'] = data_atual
-dados_excel['Unidade'] = "MVME"
+dados_excel['Unidade'] = "MVDA"
 
 # Criar a lista de meses de 1 a 12
 meses = list(range(1, 13))
 ano_atual = datetime.now().year
 
 # Carregar o arquivo de métrica
-planilha = openpyxl.load_workbook(r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.2. MVM\13.2.2.2.3. Métricas\1. Novos Indicadores Escola.xlsx')
+planilha = openpyxl.load_workbook(r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.3. MVDA\13.2.2.3.3. Métricas\1. Novos Indicadores Escola.xlsx')
 
 # Selecionar a planilha desejada
 Aba_metricas = planilha['Planilha1']
@@ -481,7 +481,7 @@ Valor_otimo_contratos = Aba_metricas['I3'].value
 dados_contrato = {
     'Ano': [ano_atual] * len(meses),
     'Mês': meses,
-    'Unidade': ["MVME"] * len(meses),
+    'Unidade': ["MVDA"] * len(meses),
     'FRENTE 1': Valor_frente1_contratos,
     'ÁREA RESPONSÁVEL RESULTADO': Valor_area_responsavel_contratos,
     'SETOR RESPONSÁVEL COLETA DADO': Valor_setor_responsavel_contratos,
@@ -533,7 +533,7 @@ Contratos_formatado = Contratos_Serie.map('{:.2%}'.format)
 # Atribuir as listas ao DataFrame
 df['Valor'] = Contratos_formatado
 
-Tratamento_Contrato = r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.2. MVM\13.2.2.2.2. Quantitativo\13.2.2.2.2.1. Base\13.2.2.2.2.1.2. Base Escolas\13.2.2.2.2.1.2.1. Excel\Tratamento_Contrato.xlsx'
+Tratamento_Contrato = r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.3. MVDA\13.2.2.3.2. Quantitativo\13.2.2.3.2.1. Base\13.2.2.3.2.1.1. Base Escolas\13.2.2.3.2.1.1.3. Excel\Tratamento_Contrato.xlsx'
 df.to_excel(Tratamento_Contrato,index=False)
 
 ############################################# 7 - Colaboradores ##########################################################
@@ -549,7 +549,7 @@ data_atual = datetime.today()
 
 # Criar uma nova coluna com a data atual
 dados_excel['Date_insert'] = data_atual
-dados_excel['Unidade'] = "MVME"
+dados_excel['Unidade'] = "MVDA"
 dados_excel['Data de admissão'] = pd.to_datetime(dados_excel['Data de admissão'])
 dados_excel['Mês_Admissão'] = dados_excel['Data de admissão'].dt.month
 dados_excel['Ano_Admissão'] = dados_excel['Data de admissão'].dt.year
@@ -588,7 +588,7 @@ for mes in meses:
 
 
 # Carregar o arquivo de métrica
-planilha = openpyxl.load_workbook(r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.2. MVM\13.2.2.2.3. Métricas\1. Novos Indicadores Escola.xlsx')
+planilha = openpyxl.load_workbook(r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.3. MVDA\13.2.2.3.3. Métricas\1. Novos Indicadores Escola.xlsx')
 
 # Selecionar a planilha desejada
 Aba_metricas = planilha['Planilha1']
@@ -608,7 +608,7 @@ Valor_otimo_turnover = Aba_metricas['I9'].value
 df_colaboradores = pd.DataFrame({
     'Ano': [ano_atual] * len(meses),
     'Mês': meses,
-    'Unidade': ["MVME"] * len(meses),
+    'Unidade': ["MVDA"] * len(meses),
     'FRENTE 1': Valor_frente1_turnover,
     'ÁREA RESPONSÁVEL RESULTADO': Valor_area_responsavel_turnover,
     'SETOR RESPONSÁVEL COLETA DADO': Valor_setor_responsavel_turnover,
@@ -625,7 +625,7 @@ df_colaboradores = pd.DataFrame({
 df_colaboradores['Valor'] = df_colaboradores['Valor'].apply(lambda x: '{:.2%}'.format(x) if x is not None else None)
 
 # Salvar o DataFrame em um novo arquivo Excel
-Tratamento_Turnover = r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.2. MVM\13.2.2.2.2. Quantitativo\13.2.2.2.2.1. Base\13.2.2.2.2.1.2. Base Escolas\13.2.2.2.2.1.2.1. Excel\Tratamento_Turnover.xlsx'
+Tratamento_Turnover = r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.3. MVDA\13.2.2.3.2. Quantitativo\13.2.2.3.2.1. Base\13.2.2.3.2.1.1. Base Escolas\13.2.2.3.2.1.1.3. Excel\Tratamento_Turnover.xlsx'
 df_colaboradores.to_excel(Tratamento_Turnover, index=False)
 
 ############################################# Turnover
@@ -633,7 +633,7 @@ df_colaboradores.to_excel(Tratamento_Turnover, index=False)
 
 
 # Carregar o arquivo de métrica
-planilha = openpyxl.load_workbook(r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.2. MVM\13.2.2.2.3. Métricas\1. Novos Indicadores Escola.xlsx')
+planilha = openpyxl.load_workbook(r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.3. MVDA\13.2.2.3.3. Métricas\1. Novos Indicadores Escola.xlsx')
 
 # Selecionar a planilha desejada
 Aba_metricas = planilha['Planilha1']
@@ -654,7 +654,7 @@ Valor_otimo_pedido_desligamento = Aba_metricas['I10'].value
 df_colaboradores = pd.DataFrame({
     'Ano': [ano_atual] * len(meses),
     'Mês': meses,
-    'Unidade': ["MVME"] * len(meses),
+    'Unidade': ["MVDA"] * len(meses),
     'FRENTE 1': Valor_frente1_pedido_desligamento,
     'ÁREA RESPONSÁVEL RESULTADO': Valor_area_responsavel_pedido_desligamento,
     'SETOR RESPONSÁVEL COLETA DADO': Valor_setor_responsavel_pedido_desligamento,
@@ -671,7 +671,7 @@ df_colaboradores = pd.DataFrame({
 df_colaboradores['Valor'] = df_colaboradores['Valor'].apply(lambda x: '{:.2%}'.format(x) if x is not None else None)
 
 # Salvar o DataFrame em um novo arquivo Excel
-Tratamento_Pedidos_desligamento = r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.2. MVM\13.2.2.2.2. Quantitativo\13.2.2.2.2.1. Base\13.2.2.2.2.1.2. Base Escolas\13.2.2.2.2.1.2.1. Excel\Tratamento_Pedidos_desligamento.xlsx'
+Tratamento_Pedidos_desligamento = r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.3. MVDA\13.2.2.3.2. Quantitativo\13.2.2.3.2.1. Base\13.2.2.3.2.1.1. Base Escolas\13.2.2.3.2.1.1.3. Excel\Tratamento_Pedidos_desligamento.xlsx'
 df_colaboradores.to_excel(Tratamento_Pedidos_desligamento, index=False)
 
 
@@ -679,7 +679,7 @@ df_colaboradores.to_excel(Tratamento_Pedidos_desligamento, index=False)
 ############################################# Notas PH
 ############################# INDICADOR : Nº de alunos com média =>7 / Nº de alunos participantes
 
-caminho_arquivo_ph = r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.3. MVDA\13.2.2.3.2. Quantitativo\13.2.2.3.2.1. Base\13.2.2.3.2.1.1. Base Escolas\15 - Notas_PH.xlsx'
+caminho_arquivo_ph = r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.3. MVDA\13.2.2.3.2. Quantitativo\13.2.2.3.2.1. Base\13.2.2.3.2.1.1. Base Escolas\13.2.2.3.2.1.1.3. Excel\15 - Notas_PH.xlsx'
 nome_aba_ph = 'PH'
 dados_excel_ph = pd.read_excel(caminho_arquivo_ph, sheet_name=nome_aba_ph)
 
@@ -690,7 +690,7 @@ ano_atual = datetime.now().year
 Qtde_total_alunos_nota7_ph = dados_excel_ph.groupby('MÊS')['% RENDIMENTO'].mean()
 
 # Carregar o arquivo de métrica
-planilha = openpyxl.load_workbook(r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.2. MVM\13.2.2.2.3. Métricas\1. Novos Indicadores Escola.xlsx')
+planilha = openpyxl.load_workbook(r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.3. MVDA\13.2.2.3.3. Métricas\1. Novos Indicadores Escola.xlsx')
 
 # Selecionar a planilha desejada
 Aba_metricas = planilha['Planilha1']
@@ -711,7 +711,7 @@ Valor_otimo_notas_ph = Aba_metricas['I11'].value
 df_ph = pd.DataFrame({
     'Ano': [ano_atual] * len(meses),
     'Mês': meses,
-    'Unidade': ["MVME"] * len(meses),
+    'Unidade': ["MVDA"] * len(meses),
     'FRENTE 1': Valor_frente1_notas_ph,
     'ÁREA RESPONSÁVEL RESULTADO': Valor_area_responsavel_notas_ph,
     'SETOR RESPONSÁVEL COLETA DADO': Valor_setor_responsavel_notas_ph,
@@ -745,7 +745,7 @@ for mes in meses:
 df_ph['Valor'] = qtde_alunos_ph
 df_ph['Valor'] = df_ph['Valor'].map('{:.2%}'.format)
 
-Tratamento_ph = r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.2. MVM\13.2.2.2.2. Quantitativo\13.2.2.2.2.1. Base\13.2.2.2.2.1.2. Base Escolas\13.2.2.2.2.1.2.1. Excel\Tratamento_ph.xlsx'
+Tratamento_ph = r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.3. MVDA\13.2.2.3.2. Quantitativo\13.2.2.3.2.1. Base\13.2.2.3.2.1.1. Base Escolas\13.2.2.3.2.1.1.3. Excel\Tratamento_ph.xlsx'
 df_ph.to_excel(Tratamento_ph, index=False)
 
 ############################################# Engajamento
@@ -757,7 +757,7 @@ dados_excel_ph = pd.read_excel(caminho_arquivo_engajamento_ph, sheet_name=nome_a
 
 
 # Carregar o arquivo de métrica
-planilha = openpyxl.load_workbook(r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.2. MVM\13.2.2.2.3. Métricas\1. Novos Indicadores Escola.xlsx')
+planilha = openpyxl.load_workbook(r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.3. MVDA\13.2.2.3.3. Métricas\1. Novos Indicadores Escola.xlsx')
 
 # Selecionar a planilha desejada
 Aba_metricas = planilha['Planilha1']
@@ -778,7 +778,7 @@ Valor_otimo_engajamento_ph = Aba_metricas['I12'].value
 df_avaliacoes = pd.DataFrame({
     'Ano': [ano_atual] * len(meses),
     'Mês': meses,
-    'Unidade': ["MVME"] * len(meses),
+    'Unidade': ["MVDA"] * len(meses),
     'FRENTE 1': Valor_frente1_engajamento_ph,
     'ÁREA RESPONSÁVEL RESULTADO': Valor_area_responsavel_engajamento_ph,
     'SETOR RESPONSÁVEL COLETA DADO': Valor_setor_responsavel_engajamento_ph,
@@ -818,7 +818,7 @@ df_avaliacoes['Valor'] = qtde_engajamento
 df_avaliacoes['Valor'] = df_avaliacoes['Valor'].map('{:.2%}'.format)
 
 # Salvar o DataFrame em um novo arquivo Excel
-Tratamento_engajamento = r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.2. MVM\13.2.2.2.2. Quantitativo\13.2.2.2.2.1. Base\13.2.2.2.2.1.2. Base Escolas\13.2.2.2.2.1.2.1. Excel\Tratamento_engajamento.xlsx'
+Tratamento_engajamento = r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.3. MVDA\13.2.2.3.2. Quantitativo\13.2.2.3.2.1. Base\13.2.2.3.2.1.1. Base Escolas\13.2.2.3.2.1.1.3. Excel\Tratamento_engajamento.xlsx'
 df_avaliacoes.to_excel(Tratamento_engajamento, index=False)
 
 ############################################# 13 - Atrasos_Faltas_alunos ##########################################################
@@ -840,7 +840,7 @@ meses = list(range(1, 13))
 ano_atual = datetime.now().year
 
 # Carregar o arquivo de métrica
-planilha = openpyxl.load_workbook(r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.2. MVM\13.2.2.2.3. Métricas\1. Novos Indicadores Escola.xlsx')
+planilha = openpyxl.load_workbook(r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.3. MVDA\13.2.2.3.3. Métricas\1. Novos Indicadores Escola.xlsx')
 
 # Selecionar a planilha desejada
 Aba_metricas = planilha['Planilha1']
@@ -860,7 +860,7 @@ Valor_otimo_falta_aluno = Aba_metricas['I13'].value
 dados = {
     'Ano': [ano_atual] * len(meses),
     'Mês': meses,
-    'Unidade': ["MVME"] * len(meses),
+    'Unidade': ["MVDA"] * len(meses),
     'FRENTE 1': Valor_frente1_falta_aluno,
     'ÁREA RESPONSÁVEL RESULTADO': Valor_area_responsavel_falta_aluno,
     'SETOR RESPONSÁVEL COLETA DADO': Valor_setor_responsavel_falta_aluno,
@@ -902,7 +902,7 @@ for mes in meses:
 # Atribuir as listas ao DataFrame
 df_falta_aluno['Valor'] = Qtde_Valor_falta_aluno
 
-Tratamento_falta_aluno = r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.2. MVM\13.2.2.2.2. Quantitativo\13.2.2.2.2.1. Base\13.2.2.2.2.1.2. Base Escolas\13.2.2.2.2.1.2.1. Excel\Tratamento_falta_aluno.xlsx'
+Tratamento_falta_aluno = r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.3. MVDA\13.2.2.3.2. Quantitativo\13.2.2.3.2.1. Base\13.2.2.3.2.1.1. Base Escolas\13.2.2.3.2.1.1.3. Excel\Tratamento_falta_aluno.xlsx'
 df_falta_aluno.to_excel(Tratamento_falta_aluno,index=False)
 
 ############################################# 10 - Ensalamento ##########################################################
@@ -919,7 +919,7 @@ ano_atual = datetime.now().year
 mes_atual = datetime.now().month
 
 # Carregar o arquivo de métrica
-planilha = openpyxl.load_workbook(r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.2. MVM\13.2.2.2.3. Métricas\1. Novos Indicadores Escola.xlsx')
+planilha = openpyxl.load_workbook(r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.3. MVDA\13.2.2.3.3. Métricas\1. Novos Indicadores Escola.xlsx')
 
 # Selecionar a planilha desejada
 Aba_metricas = planilha['Planilha1']
@@ -939,7 +939,7 @@ Valor_otimo_ensalamento = Aba_metricas['I14'].value
 dados = {
     'Ano': [ano_atual] * len(meses),
     'Mês': meses,
-    'Unidade': ["MVME"] * len(meses),
+    'Unidade': ["MVDA"] * len(meses),
     'FRENTE 1': Valor_frente1_ensalamento,
     'ÁREA RESPONSÁVEL RESULTADO': Valor_area_responsavel_ensalamento,
     'SETOR RESPONSÁVEL COLETA DADO': Valor_setor_responsavel_ensalamento,
@@ -1006,7 +1006,7 @@ meses = list(range(1, 13))
 ano_atual = datetime.now().year
 
 # Carregar o arquivo de métrica
-planilha = openpyxl.load_workbook(r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.2. MVM\13.2.2.2.3. Métricas\1. Novos Indicadores Escola.xlsx')
+planilha = openpyxl.load_workbook(r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.3. MVDA\13.2.2.3.3. Métricas\1. Novos Indicadores Escola.xlsx')
 
 # Selecionar a planilha desejada
 Aba_metricas = planilha['Planilha1']
@@ -1026,7 +1026,7 @@ Valor_otimo_governanca = Aba_metricas['I15'].value
 dados = {
     'Ano': [ano_atual] * len(meses),
     'Mês': meses,
-    'Unidade': ["MVME"] * len(meses),
+    'Unidade': ["MVDA"] * len(meses),
     'FRENTE 1': Valor_frente1_governanca,
     'ÁREA RESPONSÁVEL RESULTADO': Valor_area_responsavel_governanca,
     'SETOR RESPONSÁVEL COLETA DADO': Valor_setor_responsavel_governanca,
@@ -1077,7 +1077,7 @@ meses = list(range(1, 13))
 ano_atual = datetime.now().year
 
 # Carregar o arquivo de métrica
-planilha = openpyxl.load_workbook(r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.2. MVM\13.2.2.2.3. Métricas\1. Novos Indicadores Escola.xlsx')
+planilha = openpyxl.load_workbook(r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.3. MVDA\13.2.2.3.3. Métricas\1. Novos Indicadores Escola.xlsx')
 
 # Selecionar a planilha desejada
 Aba_metricas = planilha['Planilha1']
@@ -1097,7 +1097,7 @@ Valor_otimo_aderencia_totvs = Aba_metricas['I16'].value
 dados = {
     'Ano': [ano_atual] * len(meses),
     'Mês': meses,
-    'Unidade': ["MVME"] * len(meses),
+    'Unidade': ["MVDA"] * len(meses),
     'FRENTE 1': Valor_frente1_aderencia_totvs,
     'ÁREA RESPONSÁVEL RESULTADO': Valor_area_responsavel_aderencia_totvs,
     'SETOR RESPONSÁVEL COLETA DADO': Valor_setor_responsavel_aderencia_totvs,
@@ -1159,7 +1159,7 @@ meses = list(range(1, 13))
 ano_atual = datetime.now().year
 
 # Carregar o arquivo de métrica
-planilha = openpyxl.load_workbook(r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.2. MVM\13.2.2.2.3. Métricas\2. Régua Indicadores Escola - Financeiro.xlsx')
+planilha = openpyxl.load_workbook(r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.3. MVDA\13.2.2.3.3. Métricas\2. Régua Indicadores Escola - Financeiro.xlsx')
 
 # Selecionar a planilha desejada
 Aba_metricas = planilha['Planilha2']
@@ -1179,7 +1179,7 @@ Valor_otimo_financeiro_inadimplencia = Aba_metricas['I8'].value
 dados = {
     'Ano': [ano_atual] * len(meses),
     'Mês': meses,
-    'Unidade': ["MVME"] * len(meses),
+    'Unidade': ["MVDA"] * len(meses),
     'FRENTE 1': Valor_frente1_financeiro_inadimplencia,
     'ÁREA RESPONSÁVEL RESULTADO': Valor_area_responsavel_financeiro_inadimplencia,
     'SETOR RESPONSÁVEL COLETA DADO': Valor_setor_responsavel_financeiro_inadimplencia,
@@ -1241,7 +1241,7 @@ meses = list(range(1, 13))
 ano_atual = datetime.now().year
 
 # Carregar o arquivo de métrica
-planilha = openpyxl.load_workbook(r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.2. MVM\13.2.2.2.3. Métricas\2. Régua Indicadores Escola - Financeiro.xlsx')
+planilha = openpyxl.load_workbook(r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.3. MVDA\13.2.2.3.3. Métricas\2. Régua Indicadores Escola - Financeiro.xlsx')
 
 # Selecionar a planilha desejada
 Aba_metricas = planilha['Planilha2']
@@ -1261,7 +1261,7 @@ Valor_otimo_financeiro_custo_aluno = Aba_metricas['I6'].value
 dados = {
     'Ano': [ano_atual] * len(meses),
     'Mês': meses,
-    'Unidade': ["MVME"] * len(meses),
+    'Unidade': ["MVDA"] * len(meses),
     'FRENTE 1': Valor_frente1_financeiro_custo_aluno,
     'ÁREA RESPONSÁVEL RESULTADO': Valor_area_responsavel_financeiro_custo_aluno,
     'SETOR RESPONSÁVEL COLETA DADO': Valor_setor_responsavel_financeiro_custo_aluno,
@@ -1325,7 +1325,7 @@ meses = list(range(1, 13))
 ano_atual = datetime.now().year
 
 # Carregar o arquivo de métrica
-planilha = openpyxl.load_workbook(r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.2. MVM\13.2.2.2.3. Métricas\2. Régua Indicadores Escola - Financeiro.xlsx')
+planilha = openpyxl.load_workbook(r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.3. MVDA\13.2.2.3.3. Métricas\2. Régua Indicadores Escola - Financeiro.xlsx')
 
 # Selecionar a planilha desejada
 Aba_metricas = planilha['Planilha2']
@@ -1345,7 +1345,7 @@ Valor_otimo_financeiro_orcamento = Aba_metricas['I9'].value
 dados = {
     'Ano': [ano_atual] * len(meses),
     'Mês': meses,
-    'Unidade': ["MVME"] * len(meses),
+    'Unidade': ["MVDA"] * len(meses),
     'FRENTE 1': Valor_frente1_financeiro_orcamento,
     'ÁREA RESPONSÁVEL RESULTADO': Valor_area_responsavel_financeiro_orcamento,
     'SETOR RESPONSÁVEL COLETA DADO': Valor_setor_responsavel_financeiro_orcamento,
@@ -1395,7 +1395,7 @@ meses = list(range(1, 13))
 ano_atual = datetime.now().year
 
 # Carregar o arquivo de métrica
-planilha = openpyxl.load_workbook(r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.2. MVM\13.2.2.2.3. Métricas\2. Régua Indicadores Escola - Financeiro.xlsx')
+planilha = openpyxl.load_workbook(r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.3. MVDA\13.2.2.3.3. Métricas\2. Régua Indicadores Escola - Financeiro.xlsx')
 
 # Selecionar a planilha desejada
 Aba_metricas = planilha['Planilha2']
@@ -1415,7 +1415,7 @@ Valor_otimo_folha_pedagogico = Aba_metricas['I3'].value
 dados = {
     'Ano': [ano_atual] * len(meses),
     'Mês': meses,
-    'Unidade': ["MVME"] * len(meses),
+    'Unidade': ["MVDA"] * len(meses),
     'FRENTE 1': Valor_frente1_financeiro_folha_pedagogico,
     'ÁREA RESPONSÁVEL RESULTADO': Valor_area_responsavel_folha_pedagogico,
     'SETOR RESPONSÁVEL COLETA DADO': Valor_setor_responsavel_folha_pedagogico,
@@ -1474,7 +1474,7 @@ meses = list(range(1, 13))
 ano_atual = datetime.now().year
 
 # Carregar o arquivo de métrica
-planilha = openpyxl.load_workbook(r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.2. MVM\13.2.2.2.3. Métricas\2. Régua Indicadores Escola - Financeiro.xlsx')
+planilha = openpyxl.load_workbook(r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.3. MVDA\13.2.2.3.3. Métricas\2. Régua Indicadores Escola - Financeiro.xlsx')
 
 # Selecionar a planilha desejada
 Aba_metricas = planilha['Planilha2']
@@ -1495,7 +1495,7 @@ Valor_otimo_folha_administrativo = Aba_metricas['I4'].value
 dados = {
     'Ano': [ano_atual] * len(meses),
     'Mês': meses,
-    'Unidade': ["MVME"] * len(meses),
+    'Unidade': ["MVDA"] * len(meses),
     'FRENTE 1': Valor_frente1_financeiro_folha_administrativo,
     'ÁREA RESPONSÁVEL RESULTADO': Valor_area_responsavel_folha_administrativo,
     'SETOR RESPONSÁVEL COLETA DADO': Valor_setor_responsavel_folha_administrativo,
@@ -1554,7 +1554,7 @@ meses = list(range(1, 13))
 ano_atual = datetime.now().year
 
 # Carregar o arquivo de métrica
-planilha = openpyxl.load_workbook(r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.2. MVM\13.2.2.2.3. Métricas\2. Régua Indicadores Escola - Financeiro.xlsx')
+planilha = openpyxl.load_workbook(r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.3. MVDA\13.2.2.3.3. Métricas\2. Régua Indicadores Escola - Financeiro.xlsx')
 
 # Selecionar a planilha desejada
 Aba_metricas = planilha['Planilha2']
@@ -1575,7 +1575,7 @@ Valor_otimo_despesa_administrativo = Aba_metricas['I5'].value
 dados = {
     'Ano': [ano_atual] * len(meses),
     'Mês': meses,
-    'Unidade': ["MVME"] * len(meses),
+    'Unidade': ["MVDA"] * len(meses),
     'FRENTE 1': Valor_frente1_financeiro_despesa_administrativo,
     'ÁREA RESPONSÁVEL RESULTADO': Valor_area_responsavel_despesa_administrativo,
     'SETOR RESPONSÁVEL COLETA DADO': Valor_setor_responsavel_despesa_administrativo,
@@ -1636,7 +1636,7 @@ meses = list(range(1, 13))
 ano_atual = datetime.now().year
 
 # Carregar o arquivo de métrica
-planilha = openpyxl.load_workbook(r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.2. MVM\13.2.2.2.3. Métricas\2. Régua Indicadores Escola - Financeiro.xlsx')
+planilha = openpyxl.load_workbook(r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.3. MVDA\13.2.2.3.3. Métricas\2. Régua Indicadores Escola - Financeiro.xlsx')
 
 # Selecionar a planilha desejada
 Aba_metricas = planilha['Planilha2']
@@ -1657,7 +1657,7 @@ Valor_otimo_despesa_outras = Aba_metricas['I7'].value
 dados = {
     'Ano': [ano_atual] * len(meses),
     'Mês': meses,
-    'Unidade': ["MVME"] * len(meses),
+    'Unidade': ["MVDA"] * len(meses),
     'FRENTE 1': Valor_frente1_financeiro_despesa_outras,
     'ÁREA RESPONSÁVEL RESULTADO': Valor_area_responsavel_despesa_outras,
     'SETOR RESPONSÁVEL COLETA DADO': Valor_setor_responsavel_despesa_outras,
@@ -1716,7 +1716,7 @@ meses = list(range(1, 13))
 ano_atual = datetime.now().year
 
 # Carregar o arquivo de métrica
-planilha = openpyxl.load_workbook(r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.2. MVM\13.2.2.2.3. Métricas\1. Novos Indicadores Escola.xlsx')
+planilha = openpyxl.load_workbook(r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.3. MVDA\13.2.2.3.3. Métricas\1. Novos Indicadores Escola.xlsx')
 
 # Selecionar a planilha desejada
 Aba_metricas = planilha['Planilha1']
@@ -1736,7 +1736,7 @@ Valor_otimo_infraestrutura = Aba_metricas['I17'].value
 dados = {
     'Ano': [ano_atual] * len(meses),
     'Mês': meses,
-    'Unidade': ["MVME"] * len(meses),
+    'Unidade': ["MVDA"] * len(meses),
     'FRENTE 1': Valor_frente1_infraestrutura,
     'ÁREA RESPONSÁVEL RESULTADO': Valor_area_responsavel_infraestrutura,
     'SETOR RESPONSÁVEL COLETA DADO': Valor_setor_responsavel_infraestrutura,
@@ -1770,7 +1770,7 @@ meses = list(range(1, 13))
 ano_atual = datetime.now().year
 
 # Carregar o arquivo de métrica
-planilha = openpyxl.load_workbook(r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.2. MVM\13.2.2.2.3. Métricas\1. Novos Indicadores Escola.xlsx')
+planilha = openpyxl.load_workbook(r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.3. MVDA\13.2.2.3.3. Métricas\1. Novos Indicadores Escola.xlsx')
 
 # Selecionar a planilha desejada
 Aba_metricas = planilha['Planilha1']
@@ -1790,7 +1790,7 @@ Valor_otimo_nps_colaboradores = Aba_metricas['I18'].value
 dados = {
     'Ano': [ano_atual] * len(meses),
     'Mês': meses,
-    'Unidade': ["MVME"] * len(meses),
+    'Unidade': ["MVDA"] * len(meses),
     'FRENTE 1': Valor_frente1_nps_colaboradores,
     'ÁREA RESPONSÁVEL RESULTADO': Valor_area_responsavel_nps_colaboradores,
     'SETOR RESPONSÁVEL COLETA DADO': Valor_setor_responsavel_nps_colaboradores,
@@ -1840,7 +1840,7 @@ meses = list(range(1, 13))
 ano_atual = datetime.now().year
 
 # Carregar o arquivo de métrica
-planilha = openpyxl.load_workbook(r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.2. MVM\13.2.2.2.3. Métricas\1. Novos Indicadores Escola.xlsx')
+planilha = openpyxl.load_workbook(r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.3. MVDA\13.2.2.3.3. Métricas\1. Novos Indicadores Escola.xlsx')
 
 # Selecionar a planilha desejada
 Aba_metricas = planilha['Planilha1']
@@ -1860,7 +1860,7 @@ Valor_otimo_nps_pais_e_responsaveis = Aba_metricas['I19'].value
 dados = {
     'Ano': [ano_atual] * len(meses),
     'Mês': meses,
-    'Unidade': ["MVME"] * len(meses),
+    'Unidade': ["MVDA"] * len(meses),
     'FRENTE 1': Valor_frente1_nps_pais_e_responsaveis,
     'ÁREA RESPONSÁVEL RESULTADO': Valor_area_responsavel_nps_pais_e_responsaveis,
     'SETOR RESPONSÁVEL COLETA DADO': Valor_setor_responsavel_nps_pais_e_responsaveis,
@@ -1899,7 +1899,7 @@ df_nps_pais_e_responsaveis.to_excel(Tratamento_nps_pais_e_responsaveis,index=Fal
 
 ############################################# 22 - Financeiro_ebtida ##########################################################
 
-caminho_arquivo_ebtida = r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.2. MVM\13.2.2.2.2. Quantitativo\13.2.2.2.2.1. Base\13.2.2.2.2.1.2. Base Escolas\13.2.2.2.2.1.2.3. Financeiro - MVM\22 - Financeiro_ebtida.xlsx'
+caminho_arquivo_ebtida = r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.3. MVDA\13.2.2.3.2. Quantitativo\13.2.2.3.2.1. Base\13.2.2.3.2.1.1. Base Escolas\13.2.2.3.2.1.1.4. Financeiro - DA\22 - Financeiro_ebtida.xlsx'
 nome_aba_ebtida = 'EBTIDA'
 dados_excel_ebtida = pd.read_excel(caminho_arquivo_ebtida, sheet_name=nome_aba_ebtida)
 
@@ -1908,7 +1908,7 @@ meses = list(range(1, 13))
 ano_atual = datetime.now().year
 
 # Carregar o arquivo de métrica
-planilha = openpyxl.load_workbook(r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.2. MVM\13.2.2.2.3. Métricas\2. Régua Indicadores Escola - Financeiro.xlsx')
+planilha = openpyxl.load_workbook(r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.3. MVDA\13.2.2.3.3. Métricas\2. Régua Indicadores Escola - Financeiro.xlsx')
 
 # Selecionar a planilha desejada
 Aba_metricas = planilha['Planilha2']
@@ -1929,7 +1929,7 @@ Valor_otimo_ebtida = Aba_metricas['I10'].value
 dados = {
     'Ano': [ano_atual] * len(meses),
     'Mês': meses,
-    'Unidade': ["MVME"] * len(meses),
+    'Unidade': ["MVDA"] * len(meses),
     'FRENTE 1': Valor_frente1_ebtida,
     'ÁREA RESPONSÁVEL RESULTADO': Valor_area_responsavel_ebtida,
     'SETOR RESPONSÁVEL COLETA DADO': Valor_setor_responsavel_ebtida,

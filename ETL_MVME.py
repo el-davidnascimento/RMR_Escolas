@@ -703,7 +703,7 @@ dados_excel_ph = pd.read_excel(caminho_arquivo_ph, sheet_name=nome_aba_ph)
 meses = list(range(1, 13))
 ano_atual = datetime.now().year
 
-Qtde_total_alunos_nota7_ph = dados_excel_ph.groupby('MÊS')['% RENDIMENTO'].mean()
+Qtde_total_alunos_nota7_ph = dados_excel_ph.groupby('MÊS')['% RENDIMENTO DA TURMA'].mean()
 
 # Carregar o arquivo de métrica
 planilha = openpyxl.load_workbook(r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.2. MVM\13.2.2.2.3. Métricas\1. Novos Indicadores Escola.xlsx')
@@ -755,7 +755,7 @@ for mes in meses:
         dados_mes_ph = dados_excel_ph[dados_excel_ph['MÊS'] == mes]
 
         # Calcular a quantidade de alunos com nota maior que 7
-        Qtde_total_alunos_nota7_ph = dados_mes_ph['% RENDIMENTO'].mean()
+        Qtde_total_alunos_nota7_ph = dados_mes_ph['% RENDIMENTO DA TURMA'].mean()
 
         # Adicionar à lista de quantidade de alunos
         qtde_alunos_ph.append(Qtde_total_alunos_nota7_ph)
@@ -992,13 +992,13 @@ for mes in meses:
         media_ensalamento_mes = None
     else:
         for _, row in dados_excel_ensalamento[dados_excel_ensalamento['MÊS'] == mes].iterrows():
-            if row['Quantidade alunos'] > 0:  # Verificar se a quantidade de alunos é maior que zero
+            if row['Capacidade Alunos (Total)'] > 0:  # Verificar se a quantidade de alunos é maior que zero
                 if row['CONSIDERAR'] == 'PED':
-                    ensalamento = row['Quantidade alunos'] / row['Capacidade pedagógica']
+                    ensalamento = row['Capacidade Alunos (Total)'] / row['Capacidade pedagógica']
                 elif row['CONSIDERAR'] == '':
                     ensalamento = 0  # Não considerar na média
                 else:
-                    ensalamento = row['Quantidade alunos'] / row['Capacidade Infraestrutura']
+                    ensalamento = row['Capacidade Alunos (Total)'] / row['Capacidade Infraestrutura']
 
                 ensalamentos_mes.append(ensalamento)
 
