@@ -343,7 +343,7 @@ Qtde_total_alunos_disciplina = dados_excel_alunos_total['Numero de Matrícula'].
 
 for mes in meses:
     if dados_excel['Mês'].isna().all() or Qtde_total_alunos_disciplina == 0:
-        Desistencia_Regular = None
+        Desistencia_Regular.append(None)
     else:
         # Filtrar os dados para o mês atual e o ano atual
         dados_mes_atual = dados_excel[(dados_excel['Mês'] == mes) & (dados_excel['Ano_desistencia'] == ano_atual)]
@@ -363,8 +363,11 @@ for mes in meses:
         else:
             Desistencia_Regular.append(0)
 
+# Converter a lista para uma Series do Pandas
+Desistencia_Regular_series = pd.Series(Desistencia_Regular)
+
 # Atribuir as listas ao DataFrame
-df['Valor'] = Desistencia_Regular
+df['Valor'] = Desistencia_Regular_series.map('{:.2%}'.format)
 
 Tratamento_Desistencia_Regular = r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.1. UNI\13.2.2.1.2. Quantitativo\13.2.2.1.2.1. Base\13.2.2.1.2.1.2. Base Escolas\13.2.2.1.2.1.2.3. Excel\Tratamento_Desistencia_Regular.xlsx'
 df.to_excel(Tratamento_Desistencia_Regular,index=False)
@@ -422,29 +425,42 @@ Desistencia_Integral = []
 # Calcular o total de alunos na disciplina
 Qtde_total_alunos_disciplina = dados_excel_alunos_total['Numero de Matrícula'].count()
 
-for mes in meses:
-    if dados_excel['Mês'].isna().all() or Qtde_total_alunos_disciplina == 0:
-        Desistencia_Integral = None
-    else:
-        # Filtrar os dados para o mês atual e o ano atual
-        dados_mes_atual = dados_excel[(dados_excel['Mês'] == mes) & (dados_excel['Ano_desistencia'] == ano_atual)]
-
-        # Calcular a quantidade de desistentes do turno Regular no mês atual
-        qtde_Desistente_Integral_total = dados_mes_atual[dados_mes_atual['Turno'] == 'Integral'].shape[0]
-        medidas_todo_mes_integral = dados_mes_atual[dados_mes_atual['Segmento'] == 'TODOS'].count()
-
-        # Tem o campo de "não houve desistente" informado
-        if  (medidas_todo_mes_integral == 1).any():
-            # Calcular a taxa de desistência regular e adicionar à lista
-            if Qtde_total_alunos_disciplina != 0:
-                taxa_desistencia_integral = qtde_Desistente_Integral_total / Qtde_total_alunos_disciplina
-            else:
-                taxa_desistencia = 0
-            Desistencia_Integral.append(taxa_desistencia_integral)
+if 'Integral' in dados_excel['Turno'].values:
+    Desistencia_Integral = []
+    for mes in meses:
+        if dados_excel['Mês'].isna().all() or Qtde_total_alunos_disciplina == 0:
+            Desistencia_Integral.append(None)
         else:
-            Desistencia_Integral.append(0)
+            # Filtrar os dados para o mês atual e o ano atual
+            dados_mes_atual = dados_excel[(dados_excel['Mês'] == mes) & (dados_excel['Ano_desistencia'] == ano_atual)]
 
-df['Valor'] = Desistencia_Integral
+            # Calcular a quantidade de desistentes do turno Regular no mês atual
+            qtde_Desistente_Integral_total = dados_mes_atual[dados_mes_atual['Turno'] == 'Integral'].shape[0]
+            medidas_todo_mes_integral = dados_mes_atual[dados_mes_atual['Segmento'] == 'TODOS'].count()
+
+            # Tem o campo de "não houve desistente" informado
+            if  (medidas_todo_mes_integral == 1).any():
+                # Calcular a taxa de desistência regular e adicionar à lista
+                if Qtde_total_alunos_disciplina != 0:
+                    taxa_desistencia_integral = qtde_Desistente_Integral_total / Qtde_total_alunos_disciplina
+                else:
+                    taxa_desistencia = 0
+                Desistencia_Integral.append(taxa_desistencia_integral)
+            else:
+                Desistencia_Integral.append(0)
+else:
+    # Se nenhum valor 'Integral' estiver presente na coluna 'Turno'
+    Desistencia_Integral = [None] * len(meses)
+
+# Se você já tem a lista Desistencia_Integral, pode convertê-la para uma Series do Pandas
+Desistencia_Integral_series = pd.Series(Desistencia_Integral)
+
+# Substituir valores None por 'N/A' na série usando fillna
+Desistencia_Integral_series = Desistencia_Integral_series.fillna('N/A')
+
+# Formatar os valores como porcentagens e atribuir ao DataFrame
+df['Valor'] = Desistencia_Integral_series.map(lambda x: '{:.2%}'.format(x) if x != 'N/A' else x)
+
 
 Tratamento_Desistencia_Integral = r'G:\.shortcut-targets-by-id\1kArAZwgCxrjbQwQOPEzeJLtMUll3VVJ7\13. Dados\13.2. RMR\13.2.2. Escolas\13.2.2.1. UNI\13.2.2.1.2. Quantitativo\13.2.2.1.2.1. Base\13.2.2.1.2.1.2. Base Escolas\13.2.2.1.2.1.2.3. Excel\Tratamento_Desistencia_Integral.xlsx'
 df.to_excel(Tratamento_Desistencia_Integral,index=False)
