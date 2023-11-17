@@ -1931,7 +1931,7 @@ dados = {
     'REGULAR': Valor_regular_nps_pais_e_responsaveis,
     'ÓTIMO': Valor_otimo_nps_pais_e_responsaveis,
     'Valor': [0] * len(meses),
-    'Tipo':["Inteiro"] * len(meses),
+    'Tipo':["Porcentagem"] * len(meses),
     'Peso': Valor_peso_nps_pais_e_responsaveis,
 }
 
